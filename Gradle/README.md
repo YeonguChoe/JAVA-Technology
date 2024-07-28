@@ -58,3 +58,11 @@ dependencies {
 ```bash
 ./gradlew --refresh-dependencies
 ```
+
+## gradle init
+
+
+- 추가 할것
+1) gradle init
+2) dependencies 종류
+3) 노트 UI적으로 발전 시키지
