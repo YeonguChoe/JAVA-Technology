@@ -59,10 +59,32 @@ dependencies {
 ./gradlew --refresh-dependencies
 ```
 
+## dependencies 종류
+- implementation
+- testImplementation
+- runtimeOnly
+- compileOnly
+- annotationProcessor
+- testRuntimeOnly
+- api
+- testCompileOnly
+- apiElements
+- runtimeElements
+
+
+## test 코드 실행하기
+```bash
+./gradlew test
+```
+
+- 특정 폴더의 테스트 실행하기
+```bash
+./gradlew test -p 폴더이름
+```
+
 ## gradle init
-
-
-- 추가 할것
-1) gradle init
-2) dependencies 종류
-3) 노트 UI적으로 발전 시키지
+1) Project type: application
+2) implementation language: Java
+3) Application Structure: Application and library project
+4) DSL build script: Groovy
+5) Generate build using new API: Yes
