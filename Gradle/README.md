@@ -4,6 +4,40 @@
 - `settings.gradle.kts` (필수): 프로젝트 구조 정의, 프로젝트의 시작점 정의
 - `build.gradle.kts` (비필수): 빌드 스크립트
 
+
+### build.gradle.kts 파일
+```kotlin
+plugins {
+    id("java")
+}
+
+group = "ca.hackathon"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.jar {
+    destinationDirectory.set(file(layout.buildDirectory.dir("폴더명")))
+}
+```
+
+### settings.gradle.kts 파일
+```kotlin
+rootProject.name = "javaProject"
+```
+
+
 ## 빌드 명령어
 ```bash
 chmod +x ./gradlew
