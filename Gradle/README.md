@@ -7,29 +7,55 @@
 
 ### build.gradle.kts 파일
 ```kotlin
+// Java를 사용하는 경우
 plugins {
     id("java")
 }
 
-group = "ca.hackathon"
-version = "1.0-SNAPSHOT"
+//// Kotlin을 사용하는 경우
+//plugins {
+//    kotlin("jvm") version "2.0.0"
+//}
+//
+//kotlin {
+//    jvmToolchain(17)
+//}
 
+// Maven Repository에서 ID로 사용되는 프로젝트의 그룹 ID
+group = "com.apple"
+
+//// 개발중인 버전
+//version = "1.0.0-SNAPSHOT"
+
+// 출시 버전
+version = "1.0.0"
+
+// dependency를 참조하는 저장소
 repositories {
-    mavenCentral()
+    mavenCentral() // Maven Repository
+    google() // Google's Maven Repository
 }
 
+// jar 파일이 생성되는 위치
+tasks.jar {
+    // layout.buildDirectory.dir은 build 폴더를 의미
+    destinationDirectory.set(file(layout.buildDirectory.dir("폴더명")))
+}
+
+// 사용하는 외부 라이브러리 설정
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+//    testImplementation("org.testng:testng:7.5.1")
 }
 
+// 사용하는 유닛 테스팅 프레임워크 설정
+// 오직 1개의 테스팅 프레임워크만 고를수 있다.
 tasks.test {
-    useJUnitPlatform()
+    useJUnitPlatform() // JUnit5를 사용하는 경우
+//    useTestNG() // TestNG를 사용하는 경우
 }
 
-tasks.jar {
-    destinationDirectory.set(file(layout.buildDirectory.dir("폴더명")))
-}
 ```
 
 ### settings.gradle.kts 파일
