@@ -4,7 +4,6 @@
 - `settings.gradle.kts` (필수): 프로젝트 구조 정의, 프로젝트의 시작점 정의
 - `build.gradle.kts` (비필수): 빌드 스크립트
 
-
 ### build.gradle.kts 파일
 ```kotlin
 // Java를 사용하는 경우
@@ -55,11 +54,16 @@ tasks.test {
     useJUnitPlatform() // JUnit5를 사용하는 경우
 //    useTestNG() // TestNG를 사용하는 경우
 }
-
 ```
 
 ### settings.gradle.kts 파일
 ```kotlin
+//// kotlin을 사용하는 경우
+//plugins {
+//    // Apply the foojay-resolver plugin to allow automatic download of JDKs
+//    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
+//}
+
 rootProject.name = "javaProject"
 ```
 
