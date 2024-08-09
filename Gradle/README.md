@@ -1,5 +1,9 @@
 # Gradle
 
+## 2가지 파일 종류
+- `settings.gradle.kts` (필수): 프로젝트 구조 정의, 프로젝트의 시작점 정의
+- `build.gradle.kts` (비필수): 빌드 스크립트
+
 ## 빌드 명령어
 ```bash
 chmod +x ./gradlew
@@ -86,5 +90,5 @@ dependencies {
 1) Project type: application
 2) implementation language: Java
 3) Application Structure: Application and library project
-4) DSL build script: Groovy
+4) DSL build script: Kotlin
 5) Generate build using new API: Yes
