@@ -6,3 +6,8 @@
 - Lombok
 - Validation
 
+
+## Network Protocol
+- REST
+- Websocket
+- GraphQL
