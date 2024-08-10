@@ -1,7 +1,7 @@
-# Gradle
+# Gradle 사용법
 
 ## 2가지 파일 종류
-- `settings.gradle.kts` (필수): 프로젝트 구조 정의, 프로젝트의 시작점 정의
+- `settings.gradle.kts` (필수): 설정 파일
 - `build.gradle.kts` (비필수): 빌드 스크립트
 
 ### build.gradle.kts 파일
@@ -45,7 +45,7 @@ tasks.jar {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-//    testImplementation("org.testng:testng:7.5.1")
+//    testImplementation("org.testng:testng:7.5.1") // TestNG를 사용하는 경우
 }
 
 // 사용하는 유닛 테스팅 프레임워크 설정
@@ -57,102 +57,34 @@ tasks.test {
 ```
 
 ### settings.gradle.kts 파일
+- subproject(모듈)들을 추가해서 빌드를 할수 있게 한다.
 ```kotlin
 //// kotlin을 사용하는 경우
+// 자동으로 JVM을 다운로드 해준다.
 //plugins {
-//    // Apply the foojay-resolver plugin to allow automatic download of JDKs
 //    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 //}
 
-rootProject.name = "javaProject"
-```
+// 최상위 프로젝트의 이름을 설정
+rootProject.name = "프로젝트 이름"
 
-
-## 빌드 명령어
-```bash
-chmod +x ./gradlew
-```
-
-```bash
-./gradlew build
-```
-
-## build폴더 삭제
-
-```bash
-./gradlew clean
-```
-
-## Wrapper
-- 파일 이름
-    - gradlew: 맥, 리눅스 전용
-    - gradlew.bat: 윈도우 전용
-- 하는일: Gradle 프로그램의 버전을 지정해준다.
-
-
-## settings.gradle
-- 프로젝트 이름
-- 사용하는 모듈 이름
-
-## build.gradle
-
-### 리포지토리
-
-```groovy
-repositories {
-	mavenCentral()
-	google()
-}
-```
-
-### Plugin 추가하기
-
-```groovy
-plugins {
-    // 플러그인
-}
-```
-- 특정 dependency를 사용하려면, 그에 맞는 plugin을 추가 해야 한다.
-
-### 패키지 추가하기
-```groovy
-dependencies {
-    // 패키지
-}
-```
-
-- 패키지 추가 후
-
-```bash
-./gradlew --refresh-dependencies
+// subproject 즉, 모듈을 추가
+include("모듈의 디렉토리 이름")
 ```
 
 ## dependencies 종류
-- implementation
-- testImplementation
-- runtimeOnly
-- compileOnly
-- annotationProcessor
-- testRuntimeOnly
-- api
-- testCompileOnly
-- apiElements
-- runtimeElements
+- implementation: 일반적으로 라이브러리를 추가하는 방법
+- testImplementation: 테스트 코드를 작성할때 사용되는 라이브러리
+- runtimeOnly: 런타임에만 필요한 라이브러리
+- compileOnly: 컴파일 할때만 필요한 라이브러리
+- annotationProcessor: annotation기반 코드 생성 라이브러리
+- testRuntimeOnly: 런타임에서 테스트를 실핼할때 사용되는 라이브러리
+- testCompileOnly: 테스트 코드를 컴파일 할때만 필요한 라이브러리
+- api: 모듈의 api가 사용하는 라이브러리
 
-
-## test 코드 실행하기
-```bash
-./gradlew test
-```
-
-- 특정 폴더의 테스트 실행하기
-```bash
-./gradlew test -p 폴더이름
-```
-
-## gradle init
-1) Project type: application
-2) implementation language: Java
+## gradle init 사용법
+1) Type of Build: application
+2) Implementation Language: Java
 3) Application Structure: Application and library project
 4) DSL build script: Kotlin
 5) Generate build using new API: Yes
