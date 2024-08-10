@@ -9,5 +9,5 @@
 
 ## Network Protocol
 - REST
-- Websocket
+- WebSocket
 - GraphQL
