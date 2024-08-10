@@ -1,6 +1,8 @@
 # Spring
 
 - Spring Web
+- Spring for GraphQL
+- WebSocket
 - Spring Security
 - Spring Boot DevTools
 - Lombok
@@ -8,6 +10,9 @@
 
 
 ## Network Protocol
-- REST
-- WebSocket
-- GraphQL
+
+| Network | Dependency |
+|---|---|
+|REST| Spring Web|
+|WebSocket | WebSocket|
+| GraphQL|Spring for GraphQL |
