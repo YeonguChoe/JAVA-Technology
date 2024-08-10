@@ -1,8 +1,8 @@
 # Spring
 
 - Spring Web
-- Spring for GraphQL
 - WebSocket
+- Spring for GraphQL
 - Spring Security
 - Spring Boot DevTools
 - Lombok
@@ -11,8 +11,8 @@
 
 ## Network Protocol
 
-| Network | Dependency |
-|---|---|
-|REST| Spring Web|
-|WebSocket | WebSocket|
-| GraphQL|Spring for GraphQL |
+| Network   | Dependency         | Maven Repository                                                                          |
+| --------- | ------------------ | ----------------------------------------------------------------------------------------- |
+| REST      | Spring Web         | https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-graphql   |
+| WebSocket | WebSocket          | https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-websocket |
+| GraphQL   | Spring for GraphQL | https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-graphql   |
