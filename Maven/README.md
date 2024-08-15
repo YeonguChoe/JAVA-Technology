@@ -1,9 +1,6 @@
 # Maven  
 - Documentation: https://maven.apache.org/
 - Archetype: 처음 프로젝트 만들때 template을 의미한다.
-- GroupId: 회사 이름; Maven Central Repository에서 사용되는 ID
-- ArtifactId: 프로젝트 이름 (Artifact와 프로젝트와 같은 말이다); 만들어지는 `jar` 파일의 이름
-- version: SNAPSHOT은 release 버전이 아니라 작업중인 버전이라는 의미이다.
 
 ## Maven 프로젝트의 Folder Structure
 - `src/main/java`: 개발에 필요한 소스코드

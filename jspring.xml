@@ -8,19 +8,30 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.2</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath />
     </parent>
     <groupId>ca.hackathon</groupId>
-    <artifactId>jspring</artifactId>
+    <artifactId>desktop-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>jspring</name>
-    <description>jspring</description>
+    <name>project1</name>
+    <description>This is the desktop application written in Java.</description>
     <url />
     <licenses>
         <license />
     </licenses>
     <developers>
-        <developer />
+        <developer>
+            <id>yeongu</id>
+            <name>Yeongu Choe</name>
+            <email>yeongu.choe@icloud.com</email>
+            <url>https://github.com/YeonguChoe</url>
+            <organization>UBC</organization>
+            <organizationUrl>https://www.ubc.ca/</organizationUrl>
+            <roles>
+                <role>Software Engineer</role>
+            </roles>
+            <timezone>America/Toronto</timezone>
+        </developer>
     </developers>
     <scm>
         <connection />
