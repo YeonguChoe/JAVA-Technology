@@ -7,7 +7,9 @@
 - Spring Boot DevTools
 - Lombok
 - Validation
-
+- Spring Data JPA
+- Spring Data for Apache Cassandra
+- Spring Data MongoDB
 
 ## Network Protocol
 
