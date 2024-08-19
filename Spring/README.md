@@ -18,3 +18,6 @@
 | REST      | Spring Web         | https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web       |
 | WebSocket | WebSocket          | https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-websocket |
 | GraphQL   | Spring for GraphQL | https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-graphql   |
+
+## Kubernetes
+- https://kubernetes.io/docs/home/
