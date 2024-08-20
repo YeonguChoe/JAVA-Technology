@@ -1,5 +1,5 @@
 # Java Technology
-- JNI
+- JNI (Java Native Interface)
 ## Operating System
 - [Android](Android)
 
