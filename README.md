@@ -1,5 +1,5 @@
 # Java Technology
-- JNI (Java Native Interface)
+- JNI (Java Native Interface): C/C++과 Java 연결.
 ## Operating System
 - [Android](Android)
 
