@@ -1,9 +1,10 @@
 # Java Technology
 - JNI (Java Native Interface): C/C++과 Java 연결.
 
-## Framework
-- [Spring](Spring)
-- Quarkus
+## Spring Boot
+- Controller: 클라이언트의 요청 처리.
+- Model: SQL, MongoDB, CSV에 자료 저장, 외부 API와 통신.
+- View: 프론트엔드와 관련있음. React 사용하면 신경 쓸 필요 없음.
 
 ## Package Manager
 - [Maven](Maven): 가장 기본적인 패키지 매니저
