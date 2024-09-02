@@ -11,7 +11,7 @@
 - [Gradle](Gradle): Android와 구글에서 사용하는 패키지 매니저. Maven과 같은 https://mvnrepository.com/ 에서 패키지를 가져온다.
 
 ## Data Persistence
-- [JSON](Jackson): Jackson 라이브러리 사용.
+- [Jackson Library](Jackson): JSON데이터를 파일 시스템에 저장하는데 사용한다.
 
 ## Quarkus
 - 마이크로 서비스 만들때 사용.
