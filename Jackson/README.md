@@ -1,7 +1,6 @@
 # Jackson Library
 
-### Maven
-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+### [Maven Repository](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind)
 
 ```
 <dependency>
