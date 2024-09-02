@@ -57,3 +57,22 @@ public class MessageService {
 }
 ```
 
+
+### handler/ChatHandler.java
+
+```java
+...
+private MessageService messageService;
+...
+@Autowired
+public ChatHandler(MessageService messageService) {
+    this.messageService = messageService;
+}
+...
+String from = ipAddressBook.get(session);
+String to = ipAddressBook.get(connectedSession);
+MessageRecord messageRecord = new MessageRecord(from, to, message.getPayload(), LocalDateTime.now().toString());
+messageService.saveMessageRecord(messageRecord);
+...
+```
+
