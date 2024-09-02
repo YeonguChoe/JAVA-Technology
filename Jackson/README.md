@@ -1,5 +1,21 @@
 # Jackson Library
 
+
+### model/MessageRecord.java
+
+```java
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class MessageRecord {
+    private String from;
+    private String to;
+    private String message;
+    private String time;
+}
+```
+
+
 ### service/MessageService.java
 
 ```java
