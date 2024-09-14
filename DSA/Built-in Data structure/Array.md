@@ -4,9 +4,11 @@
 - Trying to access index out of declared array will result in exception
 
 ## Declaring an array
+- 자바에서는 Heap 영역에 동적할당으로만 배열 선언 할수 있다.
+
 ```java
 // Declaring an array
-int[] x = new int[100];
+int[] x = new int[100]; // int[]는 stack에 저장되는 레퍼런스이다. int[100]은 heap에 저장된다.
 // It is also possible to put [] after variable name
 // But int[] x is preferred
 int y[] = new int[100];
