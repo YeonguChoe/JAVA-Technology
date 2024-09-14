@@ -1,6 +1,6 @@
 # Java Collection Framework
 - Java8과 Java 23 기준으로 업데이트 하기.
-
+- Control flow, 기본 자료형 업데이트 하기.
 
 ## Data Structure provided by Java
 - [Array](Array.md)
