@@ -4,7 +4,7 @@
 - Trying to access index out of declared array will result in exception
 
 ## Declaring an array
-- 자바에서는 Heap 영역에 동적할당으로만 배열 선언 할수 있다.
+- Java에서는 Array를 Heap 영역에 동적할당으로만 선언할 수 있다.
 
 ```java
 // Declaring an array
