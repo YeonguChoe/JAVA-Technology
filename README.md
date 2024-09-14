@@ -1,8 +1,9 @@
 # Java Technology
 
 ## Built-in Data Structure
+- [Collection](DSA/Built-in%20Data%20structure)
 
-
+## Connecting with other language
 - JNI (Java Native Interface): C/C++과 Java 연결.
 
 ## Spring Boot
