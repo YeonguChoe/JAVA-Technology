@@ -1,4 +1,8 @@
 # Java Technology
+
+## Built-in Data Structure
+
+
 - JNI (Java Native Interface): C/C++과 Java 연결.
 
 ## Spring Boot
