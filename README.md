@@ -20,6 +20,7 @@
 - [Redis](Redis)
 - [Jackson Library](Jackson): JSON 데이터를 파일 시스템에 저장하는데 사용한다.
 - [Apache Commons CSV](Apache-Commons-CSV): CSV 데이터를 파일 시스템에 저장하는데 사용한다.
+- Oracle Database 23c
 
 
 
