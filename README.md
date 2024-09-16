@@ -16,9 +16,10 @@
 - [Gradle](Gradle): Android와 구글에서 사용하는 패키지 매니저. Maven과 같은 https://mvnrepository.com/ 에서 패키지를 가져온다.
 
 ## Data Persistence
+- [PostgreSQL](PostgreSQL)
+- [Redis](Redis)
 - [Jackson Library](Jackson): JSON 데이터를 파일 시스템에 저장하는데 사용한다.
 - [Apache Commons CSV](Apache-Commons-CSV): CSV 데이터를 파일 시스템에 저장하는데 사용한다.
-- PostgreSQL과 연결
 
 
 
